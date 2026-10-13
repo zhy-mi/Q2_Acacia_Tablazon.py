@@ -1,0 +1,43 @@
+# Modular Calculator
+
+def add_numbers(num1, num2):
+  #Returns the sum of two numbers
+  return num1 + num2
+
+def subtract_numbers(num1,num2):
+  #Returns the difference of two numbers
+  return num1 - num2
+
+def multiply_numbers(num1, num2):
+  # Returns the product of two numbers
+  return num1 * num2
+
+def divide_numbers(num1, num2):
+  # Returns the quotient of two numbers
+  return num1 / num2
+
+# Main program
+print (" Modular Calculator ")
+num1 = float(input("Enter first number: "))
+num2 = float(input("Enter second number: "))
+
+print("1. Add\n2. Subtract\n3. Multiply\n4. Divide")
+choice = input("Enter choice (1-4): ")
+
+if choice == '1':
+  print("Result", add_numbers(num1, num2))
+elif choice == '2':
+  print("Result", subtract_numbers(num1, num2))
+elif choice == '3':
+  print("Result", multiply_numbers(num1, num2))
+elif choice == '4':
+  print("Result", divide_numbers(num1, num2))
+else:
+  print("Invalid choice")
+
+
+# 1. add_numbers, subtract_numbers, multiply_numbers, and divide_numbers
+# 2. Each function used two parameters: num1 and num2
+# 3. The user-inputted numbers (num1, num2) were passed as arguements when the functions were called.
+# 4. The program stored the returned value and then printed it out to display the final answer to the user.
+# 5. It makes the code cleaner, more organized, and reusable, allowing each part to have a specific, manageable purpose instead of everything being mixed together.
